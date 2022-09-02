@@ -1,0 +1,21 @@
+{
+  "name": "vitest-allure-reporter",
+  "version": "0.1.0",
+  "private": false,
+  "main": "index.ts",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "rm -rf allure-results && vitest && npx allure serve",
+    "test:run": "vitest run"
+  },
+  "devDependencies": {
+    "vite": "latest",
+    "vitest": "latest"
+  },
+  "dependencies": {
+    "@vitest/ui": "^0.22.1",
+    "allure-js-commons": "latest",
+    "typescript": "^4.8.2"
+  }
+}
